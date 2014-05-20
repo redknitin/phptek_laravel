@@ -1,0 +1,45 @@
+{% extends '_shared.master' %}
+
+{% block content %}
+
+	<h1><span class="glyphicon glyphicon-pencil"></span> Blog Posts</h1>
+	<hr>
+
+	<p class="text-right">
+		<a href="/admin/posts/create" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-plus"></span> New Post</a>
+	</p>
+
+	<table class="table table-bordered table-striped">
+		<thead>
+		<tr>
+			<td>Title</td>
+			<td>View On Site</td>
+			<td>Posted</td>
+			<td>Status</td>
+		</tr>
+		</thead>
+		<tbody>
+
+		{% for post in posts %}
+			<tr>
+				<td><a href="/admin/posts/{{ post.id }}/edit">{{ post.name }}</a></td>
+				<td><a href="/{{ post.slug }}" title="View On Site">/{{ post.slug }}</a></td>
+				<td>
+					{% if post.status == 'published' %}
+						{{ post.created_at|date('m/d/Y') }}
+					{% else %}
+						&mdash;
+					{% endif %}
+				</td>
+				<td>
+					{{ post.status|title }}
+				</td>
+			</tr>
+		{% endfor %}
+
+		</tbody>
+	</table>
+
+	<div class="text-center">{{ posts.links }}</div>
+
+{% endblock %}

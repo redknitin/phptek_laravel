@@ -1,0 +1,54 @@
+{% extends '_shared.master' %}
+
+{% block content %}
+
+	<h1><span class="glyphicon glyphicon-pencil"></span> New Blog Post</h1>
+	<hr>
+
+	{{ Form.open({'url': 'admin/posts'})|raw }}
+
+		<div class="form-group">
+			<label for="name">Title</label>
+			<input type="text" class="form-control" id="name" name="name" required="required">
+		</div>
+
+		<div class="form-group">
+			<label for="body">Body</label>
+			<textarea class="form-control" id="body" name="body" style="height: 400px;"></textarea>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="form-group">
+					<label for="tags">Tags</label>
+					<input type="text" class="form-control" id="tags" name="tags">
+					<span class="help-block">Separate tags with commas.</span>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label for="status">Status</label><br>
+					<div class="btn-group btn-group-justified" data-toggle="buttons">
+						<label class="btn btn-default active">
+							<input type="radio" name="status" id="status" checked="checked" value="draft"> Draft
+						</label>
+						<label class="btn btn-default">
+							<input type="radio" name="status" value="published"> Published
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group text-right">
+			<a class="btn btn-default" href="/admin/posts">Cancel</a>
+			<input type="submit" class="btn btn-success btn-lg" value="Save">
+		</div>
+
+	{{ Form.close|raw }}
+
+{% endblock %}
+
+{% block footer %}
+	{% include '_shared.tinymce' %}
+{% endblock %}

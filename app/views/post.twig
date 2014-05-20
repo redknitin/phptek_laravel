@@ -1,0 +1,44 @@
+{% extends '_shared.master' %}
+
+{% block content %}
+
+	<div class="row">
+		<div class="col-sm-8">
+
+			<h1>{{ post.name }}</a></h1>
+			<hr>
+
+			<p>{{ post.body|replace({'<img ':'<img class="img-responsive" ', 'width="': 'data-disabled-width="'})|raw }}</p>
+
+			<p class="text-muted">Posted at {{ post.created_at|date('m/d/Y') }}</p><br>
+
+			<p class="lead"><a href="/"><span class="glyphicon glyphicon-arrow-left"></span> Back To Home</a></p>
+
+		</div>
+		<div class="col-sm-4">
+			<br><br>
+
+			{% if Auth.check %}
+				<p><a href="/admin/posts/{{ post.id }}/edit?return=1"><span class="glyphicon glyphicon-pencil"></span> Edit Post</a></p>
+				<br>
+			{% endif %}
+
+			{% if post.tags %}
+				<h4>Tags:</h4>
+				{% for tag in post.tags %}
+					<a href="/?tag={{ tag|escape('html_attr') }}" class="label label-default">{{ tag }}</a>
+				{% endfor %}
+			{% endif %}
+
+			{% if not posts.isEmpty %}
+				<br><br>
+				<h4>More Posts:</h4>
+				{% for post in posts %}
+					<p><a href="/{{ post.slug }}">{{ post.name }}</a></p>
+				{% endfor %}
+			{% endif %}
+
+		</div>
+	</div>
+
+{% endblock %}
