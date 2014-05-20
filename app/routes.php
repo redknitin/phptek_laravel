@@ -21,3 +21,6 @@ Route::group(['before' => 'auth'], function()
     //Defer entire route to controller
     Route::controller('admin', 'AdminController');
 });
+
+//Catch all blog post slugs
+Route::get('/{slug}', ['uses' => 'PostsController@show']);
