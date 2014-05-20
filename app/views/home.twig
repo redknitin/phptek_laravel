@@ -1,0 +1,39 @@
+{% extends '_shared.master' %}
+
+{% block content %}
+
+	<h1>My php[tek] 2014 Blog</h1>
+	<hr>
+
+	{% if posts is empty %}
+		<p class="lead">Welcome to the future home of My Blog. Check back often to see my posts.</p>
+	{% else %}
+
+		{% if tag %}
+			<p class="lead">All Posts Tagged With "{{ tag }}":</p>
+		{% endif %}
+
+		{% if Auth.check %}
+			<p class="text-right">
+				<a href="/admin/posts/create?return=1"><span class="glyphicon glyphicon-plus"></span> New Post</a></p>
+		{% endif %}
+
+		{% for post in posts %}
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-3">
+							<a href="/{{ post.slug }}"><img src="{{ post.image|default('/assets/img/chicago.jpg') }}" alt="{{ post.name|escape('html_attr') }}" class="img-responsive"></a>
+						</div>
+						<div class="col-sm-9">
+							<h2><a href="/{{ post.slug }}">{{ post.name }}</a></h2>
+							<p class="lead width-short">{{ post.body|striptags|slice(0,140) }}...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+
+	{% endif %}
+
+{% endblock %}
