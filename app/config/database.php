@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'sqlite',
+	'default' => 'phptek',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -46,7 +46,7 @@ return array(
 
 	'connections' => array(
 
-		'sqlite' => array(
+		'phptek' => array(
 			'driver'   => 'sqlite',
 			'database' => __DIR__.'/../database/blog.sqlite',
 			'prefix'   => '',
