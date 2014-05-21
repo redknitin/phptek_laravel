@@ -3,7 +3,24 @@
 //Simple route with closure
 Route::get('/', ['as' => 'home', function()
 {
-    return View::make('home');
+    $posts = new Models\Post;
+
+    $posts = $posts->orderBy('id', 'desc');
+    $posts = $posts->published();
+
+    if (Input::has('tag'))
+    {
+        $tag = Input::get('tag');
+        $posts = $posts->withTag($tag);
+    }
+    else
+    {
+        $tag = null;
+    }
+
+    $posts = $posts->paginate(5);
+
+    return View::make('home', compact('posts', 'tag'));
 }]);
 
 //Explicit routes mapped to controller methods

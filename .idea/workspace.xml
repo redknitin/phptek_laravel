@@ -26,10 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="676" selection-end="676" vertical-scroll-proportion="0.8048327" vertical-offset="92" max-vertical-offset="672">
+            <state line="22" column="52" selection-start="434" selection-end="434" vertical-scroll-proportion="-19.25" vertical-offset="0" max-vertical-offset="1029">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/posts/index.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="-35.875" vertical-offset="0" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -53,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Post.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-3.2083333" vertical-offset="7" max-vertical-offset="1932">
+            <state line="3" column="5" selection-start="42" selection-end="42" vertical-scroll-proportion="0.112299465" vertical-offset="0" max-vertical-offset="1932">
               <folding />
             </state>
           </provider>
@@ -310,6 +319,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phptek-laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phptek-laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phptek-laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phptek-laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -604,11 +661,6 @@
         <state line="52" column="4" selection-start="1836" selection-end="1867" vertical-scroll-proportion="1.7808219" vertical-offset="0" max-vertical-offset="1500" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/posts/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="1.130137" vertical-offset="200" max-vertical-offset="1250" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/master.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="1" selection-start="1041" selection-end="1052" vertical-scroll-proportion="1.3888888" vertical-offset="0" max-vertical-offset="1250" />
@@ -813,16 +865,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Post.php">
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-3.2083333" vertical-offset="7" max-vertical-offset="1932">
+        <state line="22" column="52" selection-start="434" selection-end="434" vertical-scroll-proportion="-19.25" vertical-offset="0" max-vertical-offset="1029">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/posts/index.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="676" selection-end="676" vertical-scroll-proportion="0.8048327" vertical-offset="92" max-vertical-offset="672">
+        <state line="41" column="0" selection-start="898" selection-end="898" vertical-scroll-proportion="-35.875" vertical-offset="0" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="42" selection-end="42" vertical-scroll-proportion="0.112299465" vertical-offset="0" max-vertical-offset="1932">
           <folding />
         </state>
       </provider>
