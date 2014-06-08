@@ -2,7 +2,7 @@ Laravel Tutorial for PHPTek
 
 presented by Collin Schneider (Think Say Do, LLC)
 
-[slides]( thinksaydo.com/phptek-laravel.pdf)
+[slides]( http://thinksaydo.com/phptek-laravel.pdf)
 
 #ROUTING
 
