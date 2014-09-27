@@ -41,5 +41,5 @@ extending class; in traits a way of packaging the methods you are using without 
 	
 #Migration
 
-	> php artisan generate:migration create_posts_table --fields="NAACOme:string, body:text, slug:string:nullable, tags:string:nullable, string:status"
+	> php artisan generate:migration create_posts_table --fields="name:string, body:text, slug:string:nullable, tags:string:nullable, string:status"
 
